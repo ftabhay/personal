@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FTABHAY // Developer</title>
+  <meta name="description"
+    content="Personal portfolio of a developer specializing in full-stack development, cybersecurity, and creative problem solving." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Great+Vibes&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-theme="dark">
+
+  <!-- ======================== HEADER ======================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="logo" aria-label="Home">FT</a>
+
+      <div class="ticker-wrap" aria-hidden="true">
+        <div class="ticker-tape" id="ticker">
+          <span>FULL-STACK DEVELOPER &nbsp;//&nbsp; OPEN FOR WORK &nbsp;//&nbsp; ポートフォリオ &nbsp;//&nbsp; COFFEE POWERED
+            &nbsp;//&nbsp; コーダー &nbsp;//&nbsp; ALWAYS LEARNING &nbsp;//&nbsp; 開発者 &nbsp;//&nbsp; </span>
+          <span>FULL-STACK DEVELOPER &nbsp;//&nbsp; OPEN FOR WORK &nbsp;//&nbsp; ポートフォリオ &nbsp;//&nbsp; COFFEE POWERED
+            &nbsp;//&nbsp; コーダー &nbsp;//&nbsp; ALWAYS LEARNING &nbsp;//&nbsp; 開発者 &nbsp;//&nbsp; </span>
+        </div>
+      </div>
+
+      <nav class="nav-menu" id="nav-menu" role="navigation" aria-label="Main navigation">
+        <a href="#home" class="nav-link active" data-section="home">HOME</a>
+        <a href="#skills" class="nav-link" data-section="skills">SKILLS</a>
+        <a href="#projects" class="nav-link" data-section="projects">PROJECTS</a>
+        <a href="#blog" class="nav-link" data-section="blog">BLOG</a>
+        <a href="#contact" class="nav-link" data-section="contact">CONTACT</a>
+      </nav>
+
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+        <span class="theme-icon theme-icon-dark">🌙</span>
+        <span class="theme-icon theme-icon-light">☀️</span>
+      </button>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+      </button>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+        <a href="#home" class="mobile-nav-link" data-section="home">HOME</a>
+        <a href="#skills" class="mobile-nav-link" data-section="skills">SKILLS</a>
+        <a href="#projects" class="mobile-nav-link" data-section="projects">PROJECTS</a>
+        <a href="#blog" class="mobile-nav-link" data-section="blog">BLOG</a>
+        <a href="#contact" class="mobile-nav-link" data-section="contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero dark-section" id="home">
+    <!-- Subtle background texture only -->
+    <div class="speed-lines" aria-hidden="true"></div>
+    <div class="halftone-bg" aria-hidden="true"></div>
+
+    <!-- Ghosted watermark -->
+    <div class="hero-bg-text" aria-hidden="true">開発者</div>
+
+    <!-- Scattered minimal Japanese glyphs -->
+    <span class="kanji-float" style="top:8%;  left:3%;  font-size:1.4rem; opacity:0.18;" aria-hidden="true">開発</span>
+    <span class="kanji-float" style="top:15%; right:5%; font-size:1.2rem; opacity:0.15;" aria-hidden="true">忍</span>
+    <span class="kanji-float" style="top:60%; left:2%; font-size:1.1rem; opacity:0.16;" aria-hidden="true">コード</span>
+    <span class="kanji-float" style="bottom:12%; right:4%; font-size:1.3rem; opacity:0.15;" aria-hidden="true">侍</span>
+    <span class="kanji-float" style="bottom:30%; left:6%; font-size:1.1rem; opacity:0.14;" aria-hidden="true">道</span>
+
+
+    <!-- MAIN HERO CONTENT -->
+    <div class="hero-inner hero-centered">
+
+      <div class="hero-eyebrow">
+        <span class="hero-tag">// FULL-STACK DEVELOPER</span>
+        <span class="hero-status"><span class="status-dot"></span>AVAILABLE FOR WORK</span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="hero-name-line">Abhay M V</span>
+      </h1>
+
+      <p class="hero-role">
+        <span class="hero-role-prefix">I build</span>
+        <span class="hero-typewriter" id="hero-typewriter"></span>
+      </p>
+
+      <p class="hero-bio">
+        Full-stack developer &amp; security enthusiast crafting<br>
+        fast, elegant, and secure digital experiences.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">View Work</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub" class="hero-soc-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="hero-soc-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="mailto:ftabhay@email.com" aria-label="Email" class="hero-soc-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path
+              d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-text">SCROLL</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- ======================== SKILLS (WHITE) ======================== -->
+  <section class="section white-section" id="skills">
+    <div class="manga-stripe top"></div>
+    <!-- Manga kanji decoration -->
+    <div class="kanji-float" style="top:5%; right:2%; opacity:0.04; font-size:5rem; color:var(--purple-glow);"
+      aria-hidden="true">技術</div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 01</span>
+        <h2 class="section-title">SKILLS</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <span class="skill-icon">⚡</span>
+            <span class="skill-category">FRONTEND</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+            <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">TypeScript</span>
+            <span class="tag">Tailwind</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--w: 90%"></div>
+            <span class="skill-lvl">EXPERT</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <span class="skill-icon">🖥️</span>
+            <span class="skill-category">BACKEND</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Node.js</span><span class="tag">Python</span><span class="tag">Express</span>
+            <span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span>
+            <span class="tag">Redis</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--w: 85%"></div>
+            <span class="skill-lvl">ADVANCED</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <span class="skill-icon">🔐</span>
+            <span class="skill-category">SECURITY</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Pen Testing</span><span class="tag">OWASP</span><span class="tag">Burp Suite</span>
+            <span class="tag">CTF</span><span class="tag">Linux</span><span class="tag">Nmap</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--w: 75%"></div>
+            <span class="skill-lvl">PROFICIENT</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <span class="skill-icon">☁️</span>
+            <span class="skill-category">DEVOPS & CLOUD</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Docker</span><span class="tag">AWS</span><span class="tag">Git</span>
+            <span class="tag">CI/CD</span><span class="tag">Vercel</span><span class="tag">Nginx</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="--w: 80%"></div>
+            <span class="skill-lvl">ADVANCED</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="manga-stripe bottom"></div>
+  </section>
+
+  <!-- ======================== PROJECTS (DARK) ======================== -->
+  <section class="section dark-section" id="projects">
+    <!-- Manga halftone in background -->
+    <div class="halftone-bg" style="opacity:0.025;" aria-hidden="true"></div>
+    <div class="kanji-float" style="bottom:5%; left:0%; opacity:0.04; font-size:6rem;" aria-hidden="true">プロジェクト</div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 02</span>
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card featured">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-num">01</span>
+              <span class="project-status active">● LIVE</span>
+            </div>
+            <h3 class="project-title">SecureShell Dashboard</h3>
+            <p class="project-desc">A real-time security operations dashboard that monitors network traffic, detects
+              anomalies, and provides actionable threat intelligence using ML models.</p>
+            <div class="project-tags">
+              <span class="tag">#Python</span><span class="tag">#React</span>
+              <span class="tag">#WebSockets</span><span class="tag">#ML</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="proj-link">DEMO →</a>
+              <a href="#" class="proj-link">SOURCE →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-num">02</span>
+              <span class="project-status dev">● DEV</span>
+            </div>
+            <h3 class="project-title">NeoStore API</h3>
+            <p class="project-desc">A blazing-fast e-commerce backend built with Node.js and PostgreSQL, featuring JWT
+              auth, payment gateway integration, and real-time inventory.</p>
+            <div class="project-tags">
+              <span class="tag">#Node.js</span><span class="tag">#PostgreSQL</span><span class="tag">#Stripe</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="proj-link">DEMO →</a>
+              <a href="#" class="proj-link">SOURCE →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-num">03</span>
+              <span class="project-status active">● LIVE</span>
+            </div>
+            <h3 class="project-title">VaultPass</h3>
+            <p class="project-desc">Zero-knowledge, end-to-end encrypted password manager with AES-256 encryption,
+              biometric auth, and cross-platform sync.</p>
+            <div class="project-tags">
+              <span class="tag">#Cryptography</span><span class="tag">#React Native</span><span
+                class="tag">#AES-256</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="proj-link">DEMO →</a>
+              <a href="#" class="proj-link">SOURCE →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-num">04</span>
+              <span class="project-status arch">● ARCHIVED</span>
+            </div>
+            <h3 class="project-title">CLI Task Bot</h3>
+            <p class="project-desc">A terminal-based productivity tool with natural language task parsing, local AI
+              integration, and synchronization across devices via CRDT.</p>
+            <div class="project-tags">
+              <span class="tag">#Rust</span><span class="tag">#AI</span><span class="tag">#CLI</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="proj-link">SOURCE →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-num">05</span>
+              <span class="project-status active">● LIVE</span>
+            </div>
+            <h3 class="project-title">PixelForge</h3>
+            <p class="project-desc">Browser-based pixel art editor with real-time collaboration, animated sprite
+              support, and one-click export to various game engine formats.</p>
+            <div class="project-tags">
+              <span class="tag">#Canvas API</span><span class="tag">#WebRTC</span><span class="tag">#TypeScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="proj-link">DEMO →</a>
+              <a href="#" class="proj-link">SOURCE →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-num">06</span>
+              <span class="project-status dev">● DEV</span>
+            </div>
+            <h3 class="project-title">DeepScan CTF</h3>
+            <p class="project-desc">Custom CTF platform with dynamic challenge generation, sandboxed exploit
+              environments, automated scoring, and comprehensive attack logging.</p>
+            <div class="project-tags">
+              <span class="tag">#Docker</span><span class="tag">#Python</span><span class="tag">#Security</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="proj-link">SOURCE →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== BLOG (WHITE) ======================== -->
+  <section class="section white-section" id="blog">
+    <div class="manga-stripe top"></div>
+    <div class="kanji-float" style="top:5%; left:1%; opacity:0.04; font-size:4.5rem; color:var(--purple-glow);"
+      aria-hidden="true">記事</div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 03</span>
+        <h2 class="section-title">BLOG</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="blog-grid">
+
+        <article class="blog-card">
+          <div class="blog-meta">
+            <span class="blog-date">2024-02-15</span>
+            <span class="blog-category">SECURITY</span>
+          </div>
+          <h3 class="blog-title">Breaking Down OWASP Top 10 for Developers</h3>
+          <p class="blog-excerpt">A practical guide to understanding and mitigating the most critical web application
+            security risks. Learn how to think like an attacker to build better defenses.</p>
+          <a href="#" class="blog-link">READ MORE →</a>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-meta">
+            <span class="blog-date">2024-01-28</span>
+            <span class="blog-category">DEVOPS</span>
+          </div>
+          <h3 class="blog-title">Zero-Downtime Deployments with Docker & Nginx</h3>
+          <p class="blog-excerpt">Step-by-step guide to building a production-grade deployment pipeline that guarantees
+            zero downtime — even for high-traffic applications.</p>
+          <a href="#" class="blog-link">READ MORE →</a>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-meta">
+            <span class="blog-date">2024-01-10</span>
+            <span class="blog-category">FRONTEND</span>
+          </div>
+          <h3 class="blog-title">Rust WebAssembly: The Future of Browser Performance</h3>
+          <p class="blog-excerpt">How Rust compiled to WASM is changing the performance ceiling for browser-based
+            applications. A deep dive with benchmarks and real-world examples.</p>
+          <a href="#" class="blog-link">READ MORE →</a>
+        </article>
+
+      </div>
+    </div>
+    <div class="manga-stripe bottom"></div>
+  </section>
+
+  <!-- ======================== CONTACT (DARK) ======================== -->
+  <section class="section dark-section" id="contact">
+    <div class="halftone-bg" style="opacity:0.025;" aria-hidden="true"></div>
+    <div class="kanji-float" style="top:10%; right:1%; opacity:0.04; font-size:5rem;" aria-hidden="true">連絡</div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 04</span>
+        <h2 class="section-title">CONTACT</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-inner">
+        <div class="contact-info">
+          <p class="contact-intro">Interested in working together, have a question, or just want to say hi? Drop me a
+            message — I'm always open to new opportunities and collaborations.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-label">EMAIL</span>
+              <a href="mailto:ftabhay@email.com" class="contact-value">ftabhay@email.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">LOCATION</span>
+              <span class="contact-value">Earth, Solar System</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">AVAILABILITY</span>
+              <span class="contact-value status-green">● Open to Opportunities</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-btn">GITHUB //</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn">LINKEDIN //</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-btn">TWITTER //</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">NAME</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required
+              autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">EMAIL</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required
+              autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label">SUBJECT</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="Project inquiry" required />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">MESSAGE</label>
+            <textarea id="message" name="message" class="form-input form-textarea"
+              placeholder="Tell me about your project..." required rows="5"></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="submit-btn">
+            <span class="btn-text">SEND MESSAGE</span>
+            <span class="btn-arrow">→</span>
+          </button>
+          <div class="form-feedback" id="form-feedback" role="alert" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="terminal-bar">
+        <span class="terminal-prompt">root@ftabhay:~$</span>
+        <span class="terminal-cmd" id="terminal-cmd"></span>
+        <span class="terminal-cursor" aria-hidden="true">█</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener" class="footer-link">// GITHUB</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-link">// LINKEDIN</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener" class="footer-link">// TWITTER</a>
+        <a href="mailto:ftabhay@email.com" class="footer-link">// EMAIL</a>
+      </div>
+      <div class="footer-copy">
+        <span>© 2024 FTABHAY</span>
+        <span class="footer-sep">//</span>
+        <span>BUILT WITH ❤️ & ☕</span>
+        <span class="footer-sep">//</span>
+        <span>漫画に触発された</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
